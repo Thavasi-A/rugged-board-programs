@@ -1,0 +1,12 @@
+Export PC12
+root@rugged-board-a5d2x-sd1:~# echo 76 > /sys/class/gpio/export
+ // Set PC12 as input pin
+root@rugged-board-a5d2x-sd1:~# echo in > /sys/class/gpio/PC12/direction
+ //Keep pressing user switch and led on
+root@rugged-board-a5d2x-sd1:~# cat /sys/class/gpio/PC12/value
+0
+ //Switch not pressed and led off 
+root@rugged-board-a5d2x-sd1:~# cat /sys/class/gpio/PC12/value
+1
+  //Unexport PC13
+root@rugged-board-a5d2x-sd1:~# echo 76 > /sys/class/gpio/unexport
