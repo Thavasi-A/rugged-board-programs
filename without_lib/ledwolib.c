@@ -11,7 +11,9 @@
 #define GPIO_NUM 77
 int main() 
 {    
-	int fd; char gpio_buf[10]; int count = 20;
+	int fd;
+	char gpio_buf[10]; 
+	int count = 20;
     
         fd = open(GPIO_EXPORT, O_WRONLY);
         if (fd < 0)
