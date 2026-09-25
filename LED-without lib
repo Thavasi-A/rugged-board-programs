@@ -1,0 +1,18 @@
+
+PC23: (pin number 87):
+root@ruggedboard: echo 87 > /sys/class/gpio/export
+root@ruggedboard: echo out > /sys/class/gpio/PC23/direction
+root@ruggedboard: echo 0 > /sys/class/gpio/PC23/value
+root@ruggedboard: echo 1 > /sys/class/gpio/PC23/value
+
+PC17: (pin number 81):
+root@ruggedboard: echo 81 > /sys/class/gpio/export
+root@ruggedboard: echo out > /sys/class/gpio/PC17/direction
+root@ruggedboard: echo 0 > /sys/class/gpio/PC17/value
+root@ruggedboard: echo 1 > /sys/class/gpio/PC17/value
+
+PA13: (pin number 13):
+root@ruggedboard: echo 13 > /sys/class/gpio/export
+root@ruggedboard: echo out > /sys/class/gpio/PA13/direction
+root@ruggedboard: echo 0 > /sys/class/gpio/PA13/value
+root@ruggedboard: echo 1 > /sys/class/gpio/PC13/value
